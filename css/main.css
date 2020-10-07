@@ -1,0 +1,379 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+/* ---------   Fonts   -------- */
+
+/*@font-face {
+    font-family: 'Circular';
+    src: url('../fonts/CircularStd-Bold.woff2') format('woff2'),
+        url('../fonts/CircularStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'Circular Book';
+    src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+        url('../fonts/CircularStd-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Bold';
+    src: url('../fonts/CircularStd-Bold.woff2') format('woff2'),
+        url('../fonts/CircularStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Medium';
+    src: url('../fonts/CircularStd-Medium.woff2') format('woff2'),
+        url('../fonts/CircularStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+::selection {
+  background: #EBEBEB;
+}
+::-moz-selection {
+  background: #EBEBEB;
+}
+.t-white {
+  color: #fff;
+}
+.t-blue {
+  color: #4647FE;
+}
+.t-black {
+  color: #373737;
+}
+.pink {
+  background: linear-gradient(124deg, #FF594E, #FF9993);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 12s ease infinite;
+  -moz-animation: AnimationName 12s ease infinite;
+  animation: AnimationName 12s ease infinite;
+}
+.blue {
+  background: linear-gradient(124deg, #4339FF, #8C89FF);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 12s ease infinite;
+  -moz-animation: AnimationName 12s ease infinite;
+  animation: AnimationName 12s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+}
+
+
+
+/* ---------   Text   -------- */
+
+
+body {
+  margin: 0;
+}
+h1, h2, h2 a {
+  font-family: 'Circular Medium';
+  font-size: 30px;
+  line-height: 40px;
+  text-decoration: none;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+}
+.small {
+  font-size: 22px;
+  line-height: 32px;
+}
+.align-middle {
+  display: flex;
+  align-items: center;
+}
+h3, .header-link {
+  font-family: 'Circular Bold';
+  font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.header-link {
+  padding-left: 15px;
+}
+.header-link:first-child {
+  padding-left: 0px;
+}
+.header-link:hover {
+  color: #4339FF;
+  text-decoration: underline;
+}
+.align {
+  text-align: left;
+}
+.footer-link {
+  font-family: 'Circular Medium';
+  font-size: 30px;
+  line-height: 40px;
+  text-decoration: none;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+}
+.footer-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+h4 {
+  color: #373737;
+  font-family: 'Circular Bold';
+  font-size: 25px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+ul {
+  padding-inline-start: 18px;
+  margin-bottom: 0;
+}
+p, li {
+  color: #373737;
+  font-family: 'Circular Book';
+  font-size: 16px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+li {
+  list-style-type: square;
+}
+
+
+
+
+/* ---------   Layout   -------- */
+
+.navigation {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.welcome {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.image-welcome {
+  padding-bottom: 15px;
+  width: 60%;
+}
+.intro {
+  padding-bottom: 175px;
+}
+.spacer {
+  padding-bottom: 45px;
+}
+#career {
+  padding-top: 75px;
+}
+.image-clients {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.project-group{
+  padding-bottom: 0px;
+  padding-top: 30px;
+}
+.project-group:first-child {
+  padding-top: 0px;
+}
+.footer {
+  padding-top: 90px;
+  padding-bottom: 240px;
+  min-height: 100vh;
+}
+.overlap {
+  z-index: 100;
+  position: relative;
+  top: -150px;
+}
+
+
+
+
+/* ---------   Responsive   -------- */
+
+@media (min-width: 574px) {
+  .image-welcome {
+    padding-bottom: 45px;
+    width: 100%;
+  }
+  .align {
+    text-align: right;
+  }
+  .project-group{
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 940px) {
+
+  /* ---------   Text   -------- */
+
+
+  body {
+    margin: 0;
+  }
+  h1, h2, h2 a {
+    font-family: 'Circular Medium';
+    font-size: 45px;
+    line-height: 60px;
+    text-decoration: none;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+  }
+  .small {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  h3, .header-link {
+    font-family: 'Circular Bold';
+    font-size: 20px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+  }
+  .header-link {
+    padding-left: 15px;
+  }
+  .header-link:hover {
+    color: #4339FF;
+    text-decoration: underline;
+  }
+  .footer-link {
+    font-family: 'Circular Medium';
+    font-size: 45px;
+    line-height: 60px;
+    text-decoration: none;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+  }
+  .footer-link:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+  h4 {
+    color: #373737;
+    font-family: 'Circular Bold';
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+  }
+  ul {
+    padding-inline-start: 18px;
+    margin-bottom: 0;
+  }
+  p, li {
+    color: #373737;
+    font-family: 'Circular Book';
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+  }
+  li {
+    list-style-type: square;
+  }
+
+
+
+
+  /* ---------   Layout   -------- */
+
+  .navigation {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .welcome {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .image-welcome {
+    padding-bottom: 45px;
+    width: 90%;
+  }
+  .intro {
+    padding-top: 45px;
+    padding-bottom: 200px;
+  }
+  .image-clients {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .projects {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .project-group{
+    padding-bottom: 0px;
+  }
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    min-height: 100vh;
+  }
+  .overlap {
+    z-index: 100;
+    position: relative;
+    top: -220px;
+  }
+
+
+}
+
+
+@media (min-width: 1400px) {
+  h1, h2, h2 a {
+    font-family: 'Circular Medium';
+    font-size: 60px;
+    line-height: 80px;
+    text-decoration: none;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+  }
+  .small {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .header-link {
+    padding-left: 15px;
+  }
+  .header-link:hover {
+    color: #4339FF;
+    text-decoration: underline;
+  }
+  .footer-link {
+    font-family: 'Circular Medium';
+    font-size: 60px;
+    line-height: 80px;
+    text-decoration: none;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+  }
+  .footer-link:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+}
